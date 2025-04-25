@@ -1,14 +1,14 @@
 import { ThemeProvider } from "./hooks/useTheme";
 import { Route, Routes, useLocation } from "react-router-dom";
 import { Footer, HomeFooter } from "./layout/Footer";
-import Home from "./pages";
-import ArtPage from "./pages/[artUrl]";
-import AllCollections from "./pages/collections"; // Optional home for collections list
-import CollectionPage from "./pages/collections/[collectionUrl]";
-import Exhibitions from "./pages/exhibitions";
-import About from "./pages/about";
-import Miscellaneous from "./pages/miscellaneous";
-import GalleryScroll from "./pages/gallery";
+import Home from "./app/index";
+import ArtPage from "./app/[artUrl]";
+import AllCollections from "./app/collections"; 
+import CollectionPage from "./app/collections/[collectionUrl]";
+import Exhibitions from "./app/exhibitions";
+import About from "./app/about";
+import Miscellaneous from "./app/miscellaneous";
+import GalleryScroll from "./app/gallery";
 
 function App() {
   const location = useLocation();
